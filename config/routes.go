@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"html"
 	"net/http"
+
+	"github.com/Ken2mer/go-mvc/controller"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
@@ -12,4 +14,5 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
 func Routes() {
 	http.HandleFunc("/", hello)
+	http.HandleFunc("/users", controller.Users)
 }
