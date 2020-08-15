@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/Ken2mer/go-mvc/model"
+	"github.com/Ken2mer/go-mvc/app/model"
 )
 
 func Users(w http.ResponseWriter, r *http.Request) {

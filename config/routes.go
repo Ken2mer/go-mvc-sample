@@ -5,7 +5,7 @@ import (
 	"html"
 	"net/http"
 
-	"github.com/Ken2mer/go-mvc/controller"
+	"github.com/Ken2mer/go-mvc/app/controller"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
